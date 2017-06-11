@@ -1,0 +1,359 @@
+<html>
+    <head>
+        <title>입학전형 페이지</title>
+        <meta charset="utf-8">
+        <meta name="author" content="JungYunJae">
+        <meta name="title" content="DSM EntryPage">
+        <meta name="description" content="2018학년도 DSM 입학 전형 페이지-랜딩 부분">
+        <meta name="keywords" content="DSM 입학전형, 웹, 2018학년도, 랜딩 페이지">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta property="og:site_name" content="EntryDSM Landing Page">
+        <meta property="og:title" content="EntryDSM">
+        <meta property="og:description" content="2018학년도 DSM 입학전형 페이지 중 랜딩 부분입니다.">
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+        <style media="Screen" type="text/css">
+            @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+            *{
+                -ms-box-sizing: border-box;
+                -webkit-box-sizing:border-box;
+                box-sizing:border-box;
+                margin:0;
+                padding:0;
+                border:0;
+                vertical-align:baseline;
+                outline:none;
+                overflow-x: hidden;
+            }
+            body{
+                width:100%;
+                height:auto;
+                margin:0 auto;
+            }
+            /* header 부분 */
+            header{
+                width:100%;
+                height:750px;
+                background: url(ImageFiles/TestBackground2.jpg);
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat:no-repeat;
+            }
+            header #Header_Image_Cover{
+                position:absolute;
+                width:100%;
+                height:750px;
+                background:linear-gradient(to right bottom, #38F399, #37E2FF);
+                /* 딱히 필요한 코드인지는 모르겠다.. */
+                -webkit-background:linear-gradient(to right bottom, #38F399, #37E2FF);
+                -ms-background:linear-gradient(to right bottom, #38F399, #37E2FF);
+                opacity:0.85;
+            }
+            #Header_Image_Cover #LogoAndNav{
+                width:100%;
+                height:150px;
+                overflow: hidden;
+            }
+            #LogoAndNav #LogoImage{
+                width:270px;
+                height:70px;
+                margin-left:7rem;
+                margin-top:2.5rem;
+                overflow: hidden;
+            }
+            #LogoAndNav #LogoImage #Logo{
+                width:170px;
+                display:block;
+            }
+            #LogoAndNav #LogoImage #LogoTitle{
+                font-size:0.65rem;
+                text-align: left;
+                color:white;
+                font-family: 'Poiret One', cursive;
+                font-weight:bold;
+            }
+            #LogoAndNav #Header_Navigation{
+                position: relative;
+                width:380px;
+                height:50px;
+                /*border:2px solid white;*/
+                float:right;
+                bottom:4.5rem;
+                right:7.5rem;
+                overflow: hidden;
+            }
+            #Header_Navigation ul li{
+                float:left;
+                color:white;
+                padding-left:2rem;
+                font-size:1.1rem;
+                letter-spacing: 0.75px;
+                padding-top:1.075rem;
+                overflow:hidden;
+            }
+            #Header_Navigation ul li:hover{
+                cursor:pointer; /* 임시 지정 */
+                font-weight:bold;
+            }
+            
+            #Header_Image_Cover #Header_MainPart{
+                width:85.675%;
+                height:70%;
+                /*border:2px solid white;*/
+                margin:0 auto;
+                font-size:0;
+                overflow:hidden;
+            }
+            #Header_MainPart .Main_TwoParts{
+                width:50%;
+                height:100%;
+                display:inline-block;
+                /*border:1px solid white;*/
+            }
+            .Main_TwoParts #Main_Title{
+                font-size:2.2rem;
+                color:white;
+                font-family:'Montserrat';
+                font-weight:bold;
+                letter-spacing:3px;
+                line-height: 1.5;
+                padding-top:8.25rem;
+            }
+            .Main_TwoParts #Sub_Title{
+                font-size:0.8rem;
+                color:white;
+                font-family:'Noto Sans KR',sans-serif;
+                letter-spacing:3px;
+                padding-top:1.5rem;
+                line-height:1.75;
+            }
+            .Main_TwoParts #ToMainBox{
+                width:10rem;
+                height:2.75rem;
+                border:1px solid white;
+                margin-top:1.75rem;
+                text-align: center;
+                font-size:0.85rem;
+                color:white;
+                text-transform: uppercase;
+                font-family:'Montserrat';
+                font-weight:bold;
+                letter-spacing:3px;
+                padding-top:0.775rem;
+                transition:1.2s;
+            }
+            .Main_TwoParts #ToMainBox:hover{
+                cursor:pointer;
+                font-size:1rem;
+                letter-spacing:5px;
+            }
+            .Main_TwoParts #Main_UnderLine{
+                width:7.5rem;
+                height:2.25px;
+                margin-top:0.65rem;
+                background-color:white;
+            }
+            #Header_MainPart #White_OpacityBox{
+                background-color:rgba(255,255,255,0.5);
+            }
+            #White_OpacityBox #WhiteBox_Title{
+                font-size:2rem;
+                color:white;
+                text-align: center;
+                font-family:'Montserrat';
+                font-weight:bold;
+                letter-spacing: 3px;
+                padding-top:5rem;
+            }
+            #White_OpacityBox #BoxesCover{
+                width:90%;
+                height:60%;
+                /*border:2px solid white;*/
+                margin:0 auto;
+                margin-top:2rem;
+                
+            }
+            #BoxesCover .FourBoxes{
+                width:49.75%;
+                height:49.5%;
+                float:left;
+                background-color:rgba(255,255,255,0.9);
+                margin:0.1%;
+                transition:1.2s;
+            }
+            .FourBoxes .MainNumbers{
+                font-size:2.5rem;
+                color:#6AFFB7;
+                text-align: center;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-weight:lighter;
+                letter-spacing:7.5px;
+                padding-top:1.875rem;
+            }
+            .FourBoxes .NumbersExplain{
+                font-size:0.8rem;
+                color:#6AFFB7;
+                font-family:'Montserrat';
+                font-weight:bold;
+                letter-spacing:4px;
+                text-align: center;
+                padding-top:0.5rem;
+            }
+            .FourBoxes:hover{
+                cursor:default;
+                background-color:#6AFFB7 !important;
+            }
+            .FourBoxes:hover .MainNumbers,
+            .FourBoxes:hover .NumbersExplain{
+                color:white;
+            }
+            /* 헤더 부분 끝 */
+            
+            /* 섹션 시작 */
+            section{
+                width:100%;
+                height:1850px;
+            }
+            section #ExploreLanding{
+                width:100%;
+                height:350px;
+                background-color:#282828;
+            }
+            #ExploreLanding #Explore_Title{
+                color:white;
+                font-family:'Noto Sans KR',sans-serif;
+                text-align: center;
+                font-size:1.75rem;
+                letter-spacing:4px;
+                margin-top:3rem;
+            }
+            #ExploreLanding #Explore_Line{
+                width:5rem;
+                height:4px;
+                background-color:white;
+                margin:0 auto;
+                margin-top:1rem;
+            }
+            #ExploreLanding #Explore_Explain{
+                color:white;
+                font-family:'Noto Sans KR',sans-serif;
+                font-weight:lighter;
+                text-align: center;
+                margin-top:1.5rem;
+                letter-spacing:3px;
+                font-size:0.9rem;
+            }
+            #ExploreLanding #Explore_Button{
+                width:10.15rem;
+                height:3.5rem;
+                background-color:#EA466A;
+                margin:0 auto;
+                border-radius:50px;
+                margin-top:1.75rem;
+                border:1.5px solid white;
+                
+                cursor:pointer;
+                text-align: center;
+                color:white;
+                font-weight:bold;
+                letter-spacing:1px;
+                padding-top:0.85rem;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="Header_Image_Cover">
+                <div id="LogoAndNav">
+                    <div id="LogoImage">
+                        <img src="ImageFiles/logo.png" id="Logo">
+                        <div id="LogoTitle">
+                            DaeDeok SoftWare Meister HighSchool
+                        </div>
+                    </div>
+                    <div id="Header_Navigation">
+                        <ul>
+                            <li>Home</li>
+                            <li>Contact</li>
+                            <li>Main</li>
+                            <li>About Us</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="Header_MainPart">
+                    <div class="Main_TwoParts">
+                        <div id="Main_Title">
+                            2018 DSM ADMISSION<br>LANDING PAGE
+                        </div>
+                        <div id="Main_UnderLine"></div>
+                        <div id="Sub_Title">
+                            2018학년도 DSM 입학전형 페이지입니다. 영 마이스터(Young Meister) 인재를 양성하며,<br>창의, 열정, 배려가 넘치는 여러분을 기다리고 있습니다.
+                        </div>
+                        <div id="ToMainBox">
+                            MAIN PAGE
+                        </div>
+                    </div>
+                    <div class="Main_TwoParts" id="White_OpacityBox">
+                        <div id="WhiteBox_Title">
+                            About Our Development!
+                        </div>
+                        <div id="BoxesCover">
+                            <div class="FourBoxes">
+                                <div class="MainNumbers">
+                                    012
+                                </div>
+                                <div class="NumbersExplain">
+                                    Programmers
+                                </div>
+                            </div>
+                            <div class="FourBoxes">
+                                <div class="MainNumbers">
+                                    04
+                                </div>
+                                <div class="NumbersExplain">
+                                    Started Month
+                                </div>
+                            </div>
+                            <div class="FourBoxes">
+                                <div class="MainNumbers">
+                                    09
+                                </div>
+                                <div class="NumbersExplain">
+                                    Finished Month
+                                </div>
+                            </div>
+                            <div class="FourBoxes">
+                                <div class="MainNumbers">
+                                    28
+                                </div>
+                                <div class="NumbersExplain">
+                                    Development
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <section>
+            <div id="ExploreLanding">
+                <div id="Explore_Title">
+                    2018 DSM 입학전형
+                </div>
+                <div id="Explore_Line"></div>
+                <div id="Explore_Explain">
+                    완전히 새로워진 2018학년도 DSM 입학전형 페이지입니다!<br>
+                    추가 문구는 웹페이지 개발이 끝난 후 다시 수정하도록 하겠습니다. 할 말이 없네요.<br>
+                    정말 레알 밥도둑 입니다. 형님덜. 인정하십니까. 급식체 너무 좋구염.앙 기모찌.
+                </div>
+                <div id="Explore_Button">
+                    GET STARTED!
+                </div>
+            </div>
+        </section>
+        <footer>
+            
+        </footer>
+    </body>
+</html>
