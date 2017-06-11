@@ -187,7 +187,7 @@
             }
             .FourBoxes .MainNumbers{
                 font-size:2.5rem;
-                color:#6AFFB7;
+                color:#08FF88;
                 text-align: center;
                 font-family: 'Noto Sans KR', sans-serif;
                 font-weight:lighter;
@@ -196,7 +196,7 @@
             }
             .FourBoxes .NumbersExplain{
                 font-size:0.8rem;
-                color:#6AFFB7;
+                color:#08FF88;
                 font-family:'Montserrat';
                 font-weight:bold;
                 letter-spacing:4px;
@@ -337,6 +337,8 @@
             #Article_Real_Main .Main_Explain_Boxes{
                 width:100%;
                 height:calc(100%/6);
+                overflow:hidden;
+                /* 이게 없으면 줄이 생김- 설계 잘못 ㅜ */
             }
             .Main_Explain_Boxes .Explain_Images{
                 display:block;
@@ -348,6 +350,55 @@
                 float:right;
                 margin-right:17.5rem;
                 margin-top:3.25rem;
+            }
+            /* 설계하는거 이상하게 해서 이 부분 문제 있으면 수정해야됨. ㅠㅠㅠㅠ*/
+            #Article_Real_Main .Explain_Images_Main{
+                width:60%;
+                /*background-color:red;*/
+                float:right;
+                position:relative;
+                bottom:14rem;
+                font-size:1.75rem;
+                font-family:'Montserrat';
+                font-weight:bold;
+                color:#414141;
+                padding-left:8rem;
+                letter-spacing:2px;
+            }
+            #Article_Real_Main .Explain_Images_Main2{
+                font-size:1.75rem;
+                font-family:'Montserrat';
+                font-weight:bold;
+                color:#414141;
+                letter-spacing:2px;
+                padding-left:16rem;
+                padding-top:5.25rem;
+            }
+            #Article_Real_Main .Explain_Images_Sub{
+                width:60%;
+                float:right;
+                position:relative;
+                bottom:11rem;
+                font-size:1.1rem;
+                padding-left:8rem;
+                color:#414141;
+                font-family:'Noto Sans KR';
+                letter-spacing:3px;
+                line-height:2;
+            }
+            #Article_Real_Main .Explain_Images_Sub2{
+                font-size:1.1rem;
+                letter-spacing: 2px;
+                font-family:'Noto Sans KR';
+                color:#414141;
+                padding-left:16rem;
+                padding-top:3rem;
+                line-height:2;
+            }
+            footer{
+                width:100%;
+                height:375px;
+                background-color:#242729;
             }
         </style>
     </head>
@@ -498,29 +549,71 @@
             <article id="Article_Real_Main">
                 <div class="Main_Explain_Boxes">
                     <img src="ImageFiles/LoginForm.png" class="Explain_Images">
-                    
+                    <div class="Explain_Images_Main">
+                        Simple Login.
+                    </div>
+                    <div class="Explain_Images_Sub">
+                        여기에 뭘 쓴지는 나중에 바꾸니까 지금은 아무것도 안 건드릴거에요.<br>
+                        이 부분 채워넣으려면 뭐라도 써야해서 이런식으로 글쓰는 겁니다. 햄토리.<br>
+                        보고 웃지마시고 뭘 채워넣어야 할지는 석진이 형이 해줄거라 믿어요.
+                    </div>
                 </div>
                 <div class="Main_Explain_Boxes"
                      style="background-color:#f5f5f5;">
                     <img src="ImageFiles/PersonInfo.png" class="Explain_Images2">
-                    
+                    <div class="Explain_Images_Main2">
+                        Person Information
+                    </div>
+                    <div class="Explain_Images_Sub2">
+                        여기에 뭘 쓴지는 나중에 바꾸니까 지금은 아무것도 안 건드릴거에요.<br>
+                        이 부분 채워넣으려면 뭐라도 써야해서 이런식으로 글쓰는 겁니다. 햄토리.<br>
+                        보고 웃지마시고 뭘 채워넣어야 할지는 석진이 형이 해줄거라 믿어요.
+                    </div>
                 </div>
                 <div class="Main_Explain_Boxes">
                     <img src="ImageFiles/Introduce.png" class="Explain_Images">
-                    
+                    <div class="Explain_Images_Main">
+                        Introduce And Study
+                    </div>
+                    <div class="Explain_Images_Sub">
+                        여기에 뭘 쓴지는 나중에 바꾸니까 지금은 아무것도 안 건드릴거에요.<br>
+                        이 부분 채워넣으려면 뭐라도 써야해서 이런식으로 글쓰는 겁니다. 햄토리.<br>
+                        보고 웃지마시고 뭘 채워넣어야 할지는 석진이 형이 해줄거라 믿어요.
+                    </div>
                 </div>
                 <div class="Main_Explain_Boxes"                    style="background-color:#f5f5f5;">
                     <img src="ImageFiles/Preview.png" class="Explain_Images2">
-                    
+                    <div class="Explain_Images_Main2">
+                        Preview Pages.
+                    </div>
+                    <div class="Explain_Images_Sub2">
+                        여기에 뭘 쓴지는 나중에 바꾸니까 지금은 아무것도 안 건드릴거에요.<br>
+                        이 부분 채워넣으려면 뭐라도 써야해서 이런식으로 글쓰는 겁니다. 햄토리.<br>
+                        보고 웃지마시고 뭘 채워넣어야 할지는 석진이 형이 해줄거라 믿어요.
+                    </div>
                 </div>
                 <div class="Main_Explain_Boxes">
                     <img src="ImageFiles/Receipt.png" class="Explain_Images">
-                    
+                    <div class="Explain_Images_Main">
+                        Receipt Check.
+                    </div>
+                    <div class="Explain_Images_Sub">
+                        여기에 뭘 쓴지는 나중에 바꾸니까 지금은 아무것도 안 건드릴거에요.<br>
+                        이 부분 채워넣으려면 뭐라도 써야해서 이런식으로 글쓰는 겁니다. 햄토리.<br>
+                        보고 웃지마시고 뭘 채워넣어야 할지는 석진이 형이 해줄거라 믿어요.
+                    </div>
                 </div>
                 <div class="Main_Explain_Boxes"
                      style="background-color:#f5f5f5;">
                     <img src="ImageFiles/Print.png" class="Explain_Images2">
-                    
+                    <div class="Explain_Images_Main2">
+                        Print Information.
+                    </div>
+                    <div class="Explain_Images_Sub2">
+                        여기에 뭘 쓴지는 나중에 바꾸니까 지금은 아무것도 안 건드릴거에요.<br>
+                        이 부분 채워넣으려면 뭐라도 써야해서 이런식으로 글쓰는 겁니다. 햄토리.<br>
+                        보고 웃지마시고 뭘 채워넣어야 할지는 석진이 형이 해줄거라 믿어요.
+                    </div>
                 </div>
             </article>
         </section>
