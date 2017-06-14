@@ -53,15 +53,17 @@
             }
             #Header_Image_Cover #LogoAndNav{
                 width:100%;
-                height:150px;
+                height:110px;
                 overflow: hidden;
-                /*position:fixed;*/
+                /*border:2px solid white;*/
+                margin-top:30px;
+/*                position:fixed;*/
             }/* 고정 값 줘서 배경 색 바꾸도록 하기 -JS 이용 */
             #LogoAndNav #LogoImage{
                 width:270px;
                 height:70px;
                 margin-left:7rem;
-                margin-top:2.5rem;
+                margin-top:1.5rem;
                 overflow: hidden;
             }
             #LogoAndNav #LogoImage #Logo{
@@ -109,6 +111,7 @@
                 /* 상단 부분 fixed 적용할 시 필요!
                 margin-top:150px;
                 */
+                margin-top:10px;
             }
             #Header_MainPart .Main_TwoParts{
                 width:50%;
@@ -166,7 +169,6 @@
                 color:white;
                 text-align: center;
                 font-family:'Montserrat';
-                font-weight:bold;
                 letter-spacing: 3px;
                 padding-top:5rem;
             }
@@ -427,6 +429,28 @@
                 height:200px;
                 background-color:#242729;
             }
+            footer #Privacy{
+                width:60%;
+                height:100%;
+                /*border:2px solid white;*/
+                margin-left:15rem;
+                transition:1.5s;
+                padding-top:1rem;
+                /* 반응형 할 시 trasition 값 줌.*/
+            }
+            #Privacy #Privacy_Main{
+                color:floralwhite;
+                font-size:0.9rem;
+                word-spacing:1rem;
+                letter-spacing: 0.5px;
+                padding-top:1.15rem;
+            }
+            #Privacy .Privacy_Sub{
+                color:floralwhite;
+                font-size:0.8rem;
+                line-height:1.5;
+                word-spacing: 1.5px;
+            }
         </style>
     </head>
     <body>
@@ -647,7 +671,21 @@
             </article>
         </section>
         <footer>
-            
+            <div id="Privacy">
+                <div id="Privacy_Main">
+                    개인정보처리방침 | 저작권보호정책 | 이용약관 | 웹접근성안내 | 영상정보처리방침
+                </div>
+                <br>
+                <div class="Privacy_Sub">
+                    (34111)대전광역시 유성구 가정북로 76(장동 23-9)<br>
+                    교무실 ☎ : 042-866-8822, 교무실 Fax : 042-867-9900, 행정실 ☎ : 042-866-8885, 행정실 Fax : 042-863-4308
+                    <br>
+                    사업자 등록 번호 314-83-01600 / 기관 메일 dsmhs@korea.kr
+                    <br><br>
+                    Copyright&#9400; 대덕소프트웨어마이스터고등학교. All rights reserved.
+                    
+                </div>
+            </div>
         </footer>
         <script type="text/javascript">
             function fnMove(){
