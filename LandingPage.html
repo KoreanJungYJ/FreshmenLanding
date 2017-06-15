@@ -15,7 +15,7 @@
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <style media="Screen" type="text/css">
             @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
-            *{
+            *{ /* 공통 */
                 -ms-box-sizing: border-box;
                 -webkit-box-sizing:border-box;
                 box-sizing:border-box;
@@ -27,13 +27,13 @@
                 overflow-x: hidden;
                 font-family:sans-serif;
             }
-            body{
+            body{ /* 공통 */
                 width:100%;
                 height:auto;
                 margin:0 auto;
             }
             /* header 부분 */
-            header{
+            header{ /* 공통 */
                 width:100%;
                 height:750px;
                 background: url(ImageFiles/TestBackground2.jpg);
@@ -41,7 +41,7 @@
                 background-position: center;
                 background-repeat:no-repeat;
             }
-            header #Header_Image_Cover{
+            header #Header_Image_Cover{ /* 공통 */
                 position:absolute;
                 width:100%;
                 height:750px;
@@ -51,7 +51,7 @@
                 -ms-background:background:linear-gradient(to right bottom, rgba(44,181,115,0.85), rgba(51,204,231,0.85));
                 /*opacity:0.85;*/
             }
-            #Header_Image_Cover #LogoAndNav{
+            #Header_Image_Cover #LogoAndNav{ /* 공통 */
                 width:100%;
                 height:110px;
                 overflow: hidden;
@@ -96,7 +96,7 @@
                 padding-top:1.075rem;
                 overflow:hidden;
             }
-            #Header_Navigation ul li:hover{
+            #Header_Navigation ul li:hover{ /* 공통 */
                 cursor:pointer; /* 임시 지정 */
                 font-weight:bold;
             }
@@ -150,7 +150,7 @@
                 padding-top:0.775rem;
                 transition:1.2s;
             }
-            .Main_TwoParts #ToMainBox:hover{
+            .Main_TwoParts #ToMainBox:hover{ /* 공통 */
                 cursor:pointer;
                 font-size:1rem;
                 letter-spacing:5px;
@@ -161,7 +161,7 @@
                 margin-top:0.65rem;
                 background-color:white;
             }
-            #Header_MainPart #White_OpacityBox{
+            #Header_MainPart #White_OpacityBox{ /* 공통 */
                 background-color:#83dad0;
             }
             #White_OpacityBox #WhiteBox_Title{
@@ -206,30 +206,30 @@
                 text-align: center;
                 padding-top:0.5rem;
             }
-            .FourBoxes:hover{
+            .FourBoxes:hover{ /* 공통 */
                 cursor:default;
                 background-color:#6cc4b9 !important;
             }
             .FourBoxes:hover .MainNumbers,
-            .FourBoxes:hover .NumbersExplain{
+            .FourBoxes:hover .NumbersExplain{ /* 공통 */
                 color:white;
             }
-            .FourBoxes:hover .NumbersExplain{
+            .FourBoxes:hover .NumbersExplain{ /* 공통 */
                 font-size:1.1rem;
             }
             /* 헤더 부분 끝 */
             
             /* 섹션 시작 */
-            section{
+            section{ /* 공통 */
                 width:100%;
-                height:3030px;
+                height:auto;
             }
-            section #ExploreLanding{
+            section #ExploreLanding{ /* 공통 */
                 width:100%;
                 height:350px;
                 background-color:#282828;
             }
-            #ExploreLanding #Explore_Title{
+            #ExploreLanding #Explore_Title{ /* 공통 */
                 color:white;
                 font-family:'Noto Sans KR',sans-serif;
                 text-align: center;
@@ -237,14 +237,14 @@
                 letter-spacing:4px;
                 margin-top:3rem;
             }
-            #ExploreLanding #Explore_Line{
+            #ExploreLanding #Explore_Line{ /* 공통 */
                 width:5rem;
                 height:4px;
                 background-color:white;
                 margin:0 auto;
                 margin-top:1rem;
             }
-            #ExploreLanding #Explore_Explain{
+            #ExploreLanding #Explore_Explain{ /* 공통 */
                 color:white;
                 font-family:'Noto Sans KR',sans-serif;
                 font-weight:lighter;
@@ -253,7 +253,7 @@
                 letter-spacing:3px;
                 font-size:0.9rem;
             }
-            #ExploreLanding #Explore_Button{
+            #ExploreLanding #Explore_Button{ /* 공통 */
                 width:10.15rem;
                 height:3.5rem;
                 background-color:#EA466A;
@@ -265,7 +265,7 @@
                 display:table;
                 /*padding-top:0.85rem;*/
             } /* 누를 시 아래로 내려가도록 */
-            #Explore_Button #Explore_Text{
+            #Explore_Button #Explore_Text{ /* 공통 */
                 text-align: center;
                 color:white;
                 font-weight:bold;
@@ -320,12 +320,12 @@
                 display:block;
                 margin:0 auto;
             }
-            #Article_Images_Cover .ExImages:hover{
+            #Article_Images_Cover .ExImages:hover{ /* 공통 */
                 animation: SideMove 0.5s forwards;
                 -webkit-animation: SideMove 0.5s forwards;
                 -ms-animation:SideMove 0.5s forwards;
             }
-            @keyframes SideMove{
+            @keyframes SideMove{ /* 공통 */
                 25%{
                     transform:rotate(20deg);
                 }
@@ -427,7 +427,7 @@
             /* 섹션 부분 끝*/
             
             /* 푸터 부분 시작 */
-            footer{
+            footer{ /* 공통 */
                 width:100%;
                 height:200px;
                 background-color:#242729;
@@ -457,8 +457,25 @@
             /* 푸터 부분 끝 */
             
             /* 반응형 고려 시작 */
+            @media all and (min-width:463px){
+                
+            }
             
+            @media all and (min-width: 670px){
+                
+            }
             
+            @media all and (min-width: 875px){
+                
+            }
+            
+            @media all and (min-width: 1050px){
+                
+            }
+            
+            @media all and (min-width: 1295px){
+                
+            }
         </style>
     </head>
     <body>
