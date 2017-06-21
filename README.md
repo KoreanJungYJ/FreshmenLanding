@@ -1,3 +1,3 @@
 # FreshmenLanding
 
-DSM 신입생 입학전형 랜딩페이지입니다.
+It's a repository for test.
