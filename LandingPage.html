@@ -24,13 +24,14 @@
                 border:0;
                 vertical-align:baseline;
                 outline:none;
-                overflow-x: hidden;
+                overflow-x: auto;
                 font-family:sans-serif;
             }
             body{ /* 공통 */
                 width:100%;
                 height:auto;
                 margin:0 auto;
+                min-width:850px;
             }
             /* header 부분 */
             header{ /* 공통 */
@@ -50,6 +51,7 @@
                 -webkit-background:linear-gradient(to right bottom, rgba(44,181,115,0.85), rgba(51,204,231,0.85));
                 -ms-background:background:linear-gradient(to right bottom, rgba(44,181,115,0.85), rgba(51,204,231,0.85));
                 /*opacity:0.85;*/
+                min-width:850px;
             }
             #Header_Image_Cover #LogoAndNav{ /* 공통 */
                 width:100%;
@@ -216,6 +218,7 @@
             }
             .FourBoxes:hover .NumbersExplain{ /* 공통 */
                 font-size:1.1rem;
+                overflow:hidden;
             }
             /* 헤더 부분 끝 */
             
@@ -223,6 +226,7 @@
             section{ /* 공통 */
                 width:100%;
                 height:auto;
+                
             }
             section #ExploreLanding{ /* 공통 */
                 width:100%;
@@ -302,7 +306,6 @@
                 height:340px;
                 text-align:center;
                 /*border-top:1px solid #c6c6c6;*/
-                overflow:hidden;
                 /* 임시 지정 */
                 /* 반응형 할 때 다시 고려 */
             }
@@ -326,17 +329,14 @@
                 -ms-animation:SideMove 0.5s forwards;
             }
             @keyframes SideMove{ /* 공통 */
-                25%{
-                    transform:rotate(20deg);
+                0%{
+                    transform:scale(1);
                 }
                 50%{
-                    transform:rotate(-20deg);
-                }
-                75%{
-                    transform:rotate(20deg);
+                    transform:scale(0.7);
                 }
                 100%{
-                    transform:rotate(0deg);
+                    transform:scale(1);
                 }
             }
             .Article_Images .Article_ImageTitle{
@@ -373,23 +373,16 @@
             }
             .Main_Explain_Boxes .Explain_Images2{
                 display:block;
-                float:right;
                 margin-right:17.5rem;
                 margin-top:3.25rem;
             }
-            /* 설계하는거 이상하게 해서 이 부분 문제 있으면 수정해야됨. ㅠㅠㅠㅠ .Explain_Images_Main 부분
-            아니면 반응형 할 때 잘 굴려보던지.. */
             #Article_Real_Main .Explain_Images_Main{
-                width:60%;
                 /*background-color:red;*/
-                float:right;
                 position:relative;
-                bottom:14rem;
                 font-size:1.75rem;
                 font-family:'Montserrat';
                 font-weight:bold;
                 color:#414141;
-                padding-left:8rem;
                 letter-spacing:2px;
             }
             #Article_Real_Main .Explain_Images_Main2{
@@ -397,30 +390,22 @@
                 font-family:'Montserrat';
                 font-weight:bold;
                 color:#414141;
-                letter-spacing:2px;
-                padding-left:16rem;
-                padding-top:5.25rem;
+                letter-spacing:3px;
             }
             #Article_Real_Main .Explain_Images_Sub{
-                width:60%;
-                float:right;
                 position:relative;
-                bottom:11rem;
                 font-size:1.15rem;
-                padding-left:8rem;
                 color:#414141;
                 font-family:'Noto Sans KR';
                 letter-spacing:3px;
-                line-height:1.35;
                 overflow:hidden;
             }
             #Article_Real_Main .Explain_Images_Sub2{
+                position:relative;
                 font-size:1.15rem;
                 letter-spacing: 2px;
                 font-family:'Noto Sans KR';
                 color:#414141;
-                padding-left:16rem;
-                padding-top:3rem;
                 line-height:1.35;
                 overflow:hidden;
             }
@@ -439,42 +424,103 @@
                 margin-left:15rem;
                 transition:1.5s;
                 padding-top:1rem;
-                /* 반응형 할 시 trasition 값 줌.*/
-            }
-            #Privacy #Privacy_Main{
-                color:floralwhite;
-                font-size:0.9rem;
-                word-spacing:1rem;
-                letter-spacing: 0.5px;
-                padding-top:1.15rem;
             }
             #Privacy .Privacy_Sub{
                 color:floralwhite;
-                font-size:0.8rem;
+                font-size:0.85rem;
                 line-height:1.5;
                 word-spacing: 1.5px;
+                margin-top:2rem;
             }
             /* 푸터 부분 끝 */
             
             /* 반응형 고려 시작 */
-            @media all and (min-width:463px){
-                
+            @media all and (min-width:400px){
+                section article{
+                    height:900px;
+                }
+                article #Article_Images_Cover{
+                    height:750px;
+                }
+                section #Article_Real_Main{
+                    height:3000px;
+                }
+                .Main_Explain_Boxes .Explain_Images,
+                .Main_Explain_Boxes .Explain_Images2{
+                    margin:0 auto;
+                    margin-top:2rem;
+                }
+                #Article_Real_Main .Explain_Images_Main,
+                #Article_Real_Main .Explain_Images_Sub{
+                    width:100%;
+                    bottom:0rem;
+                    margin:0 auto;
+                    text-align: center;
+                    padding-top:1rem;
+                    line-height:1.5;
+                    margin-right:4.1rem;
+                }
+                #Article_Real_Main .Explain_Images_Main2,
+                #Article_Real_Main .Explain_Images_Sub2{
+                    width:100%;
+                    text-align: center;
+                    margin:0 auto;
+                    padding:0;
+                    padding-top:1.5rem;
+                    letter-spacing: 3px;
+                }
             }
             
-            @media all and (min-width: 670px){
-                
-            }
-            
-            @media all and (min-width: 875px){
-                
-            }
-            
-            @media all and (min-width: 1050px){
-                
-            }
-            
-            @media all and (min-width: 1295px){
-                
+            @media all and (min-width:1296.9px){
+                section article{
+                    height:530px;
+                }
+                article #Article_Images_Cover{
+                    height:350px;
+                    overflow:hidden;
+                }
+                section #Article_Real_Main{
+                    height:2150px;
+                }
+                /* 여기부터의 반응형은 야매로 한 느낌이 들어서 좀 찝찝하지만 결과는 제대로 나옴. 내년에 새로 다시 짜거나 수정을 전체적으로 해야겠음. */
+                .Main_Explain_Boxes .Explain_Images{
+                    display:block;
+                    margin-left:17.5rem;
+                    margin-top:3.25rem;
+                }
+                .Main_Explain_Boxes .Explain_Images2{
+                    display:block;
+                    margin-right:17.5rem;
+                    margin-top:3.25rem;
+                }
+                #Article_Real_Main .Explain_Images_Main{
+                    width:55%;
+                    bottom:14rem;
+                    padding-left:8rem;
+                    line-height:1.35;
+                    text-align: left;
+                }
+                #Article_Real_Main .Explain_Images_Main2{
+                    width:60%;
+                    float:left;
+                    text-align:left;
+                    margin-top:-15rem;
+                    margin-left:8.6rem;
+                }
+                #Article_Real_Main .Explain_Images_Sub{
+                    width:55%;
+                    bottom:11rem;
+                    padding-left:8rem;
+                    line-height:1.35;
+                    text-align:left;
+                }
+                #Article_Real_Main .Explain_Images_Sub2{
+                    width:60%;
+                    float:left;
+                    text-align:left;
+                    margin-top:-10rem;
+                    margin-left:8.5rem;
+                }
             }
         </style>
     </head>
@@ -483,7 +529,7 @@
             <div id="Header_Image_Cover">
                 <div id="LogoAndNav">
                     <div id="LogoImage">
-                        <img src="ImageFiles/logo.png" id="Logo">
+                        <img src="ImageFiles/logo.png" id="Logo" draggable=false;>
                         <div id="LogoTitle">
                             DaeDeok SoftWare Meister HighSchool
                         </div>
@@ -578,7 +624,7 @@
                 <div id="Article_Line"></div>
                 <div id="Article_Images_Cover">
                     <div class="Article_Images">
-                        <img src="ImageFiles/School.png" class="ExImages">
+                        <img src="ImageFiles/School.png" class="ExImages" draggable=false;>
                         <div class="Article_ImageTitle">
                             SCHOOL
                         </div>
@@ -589,7 +635,7 @@
                         </div>
                     </div>
                     <div class="Article_Images">
-                        <img src="ImageFiles/Study.png" class="ExImages">
+                        <img src="ImageFiles/Study.png" class="ExImages" draggable=false;>
                         <div class="Article_ImageTitle">
                             STUDY
                         </div>
@@ -598,8 +644,8 @@
                             총 3가지 과로 구성이 되어 있으며,<br>학생들은 각 과에 맞는 공부를 하고 있습니다.  
                         </div>
                     </div>
-                    <div class="Article_Images">
-                        <img src="ImageFiles/Library.png" class="ExImages">
+                    <div class="Article_Images" id="Article_ToBottom1">
+                        <img src="ImageFiles/Library.png" class="ExImages" draggable=false;>
                         <div class="Article_ImageTitle">
                             LIBRARY
                         </div>
@@ -610,7 +656,7 @@
                         </div>
                     </div>
                     <div class="Article_Images">
-                        <img src="ImageFiles/Diploma.png" class="ExImages">
+                        <img src="ImageFiles/Diploma.png" class="ExImages" draggable=false;>
                         <div class="Article_ImageTitle"
                              style="padding-left:1rem;">
                             COMPETITION
@@ -626,7 +672,7 @@
             <!-- 그림 설명 6개 -->
             <article id="Article_Real_Main">
                 <div class="Main_Explain_Boxes">
-                    <img src="ImageFiles/LoginForm.png" class="Explain_Images">
+                    <img src="ImageFiles/LoginForm.png" class="Explain_Images" draggable=false;>
                     <div class="Explain_Images_Main">
                         Simple Login.
                     </div>
@@ -638,7 +684,7 @@
                 </div>
                 <div class="Main_Explain_Boxes"
                      style="background-color:#f5f5f5;">
-                    <img src="ImageFiles/PersonInfo.png" class="Explain_Images2">
+                    <img src="ImageFiles/PersonInfo.png" class="Explain_Images2" draggable=false;>
                     <div class="Explain_Images_Main2">
                         Person Information
                     </div>
@@ -649,7 +695,7 @@
                     </div>
                 </div>
                 <div class="Main_Explain_Boxes">
-                    <img src="ImageFiles/Introduce.png" class="Explain_Images">
+                    <img src="ImageFiles/Introduce.png" class="Explain_Images" draggable=false;>
                     <div class="Explain_Images_Main">
                         Introduce And Study
                     </div>
@@ -660,7 +706,7 @@
                     </div>
                 </div>
                 <div class="Main_Explain_Boxes"                    style="background-color:#f5f5f5;">
-                    <img src="ImageFiles/Preview.png" class="Explain_Images2">
+                    <img src="ImageFiles/Preview.png" class="Explain_Images2" draggable=false;>
                     <div class="Explain_Images_Main2">
                         Preview Pages.
                     </div>
@@ -671,7 +717,7 @@
                     </div>
                 </div>
                 <div class="Main_Explain_Boxes">
-                    <img src="ImageFiles/Receipt.png" class="Explain_Images">
+                    <img src="ImageFiles/Receipt.png" class="Explain_Images" draggable=false;>
                     <div class="Explain_Images_Main">
                         Receipt Check.
                     </div>
@@ -683,7 +729,7 @@
                 </div>
                 <div class="Main_Explain_Boxes"
                      style="background-color:#f5f5f5;">
-                    <img src="ImageFiles/Print.png" class="Explain_Images2">
+                    <img src="ImageFiles/Print.png" class="Explain_Images2" draggable=false;>
                     <div class="Explain_Images_Main2">
                         Print Information.
                     </div>
@@ -697,10 +743,6 @@
         </section>
         <footer>
             <div id="Privacy">
-                <div id="Privacy_Main">
-                    개인정보처리방침 | 저작권보호정책 | 이용약관 | 웹접근성안내 | 영상정보처리방침
-                </div>
-                <br>
                 <div class="Privacy_Sub">
                     (34111)대전광역시 유성구 가정북로 76(장동 23-9)<br>
                     교무실 ☎ : 042-866-8822, 교무실 Fax : 042-867-9900, 행정실 ☎ : 042-866-8885, 행정실 Fax : 042-863-4308
